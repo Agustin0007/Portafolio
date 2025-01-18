@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang = "es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Portafolios" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> PortaFolio</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <!--Menu Encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Agustin</a>
+            </div>
+            <nav id="nav" class="responsive">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </div>
+        </header>
+    </div>
+    <!--SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="Img/Imagen de WhatsApp 2025-01-11 a las 16.50.14_c4ca5b2e.jpg" alt="">
+            </div>
+            <h1>Agustin Patat</h1>
+            <h2>Analista de Datos</h2>
+            <div class="redes">
+                <a target="_blank" href="mailto:agustinpatat5@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                    <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path><path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"></path><polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"></polygon><path fill="#c62828" d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z"></path><path fill="#fbc02d" d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z"></path>
+                    </svg></a>
+            </div>
+        </div>
+    </section>
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p>Mi nombre es Agustín Patat, estudiante de Ingeniería en Sistemas de Información, y estoy entusiasmado por la oportunidad de integrarme a un equipo laboral donde pueda contribuir con mis habilidades y seguir desarrollándome profesionalmente.
+
+                Soy una persona responsable, puntual y con gran capacidad de aprendizaje. Me adapto rápidamente a los entornos laborales y disfruto trabajando en equipo, aportando ideas innovadoras y tomando decisiones que impulsen el crecimiento de los proyectos en los que participo.
+                
+                Poseo conocimientos y habilidades en analisis de datos y desarrollo FrontEnd. Además, me caracteriza mi creatividad para resolver problemas y mi enfoque analítico y metódico.
+                
+                Estoy convencido de que mis habilidades técnicas y mi actitud positiva pueden generar un impacto positivo en su organización. Espero con interés la posibilidad de contribuir al éxito de su equipo y crecer junto a ustedes.
+                                
+            </p>
+            <div class="fila">
+                <!--Datos Personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños:</strong>
+                            16-02-2004
+                        </li>
+                        <li>
+                            <strong>Telefono:</strong>
+                            3564 360908
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            agustinpatat5@gmail.com
+                        </li>
+                        <li>
+                            <strong>Direccion:</strong>
+                            San Francisco, Cordoba, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo:</strong>
+                            <span>Analista de Datos - Estudiante</span>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="Agustin_Patat_CV.pdf">Descagar CV <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <!--SECCION SKILLS-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Hablidades</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Habilidades Tecnicas</h3>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso SQL">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso Python">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Power BI</span>
+                        <div class="barra-skill">
+                            <div class="progreso Power_BI">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C</span>
+                        <div class="barra-skill">
+                            <div class="progreso C">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Microsoft Excel</span>
+                        <div class="barra-skill">
+                            <div class="progreso Microsoft_Excel">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Microsoft Word</span>
+                        <div class="barra-skill">
+                            <div class="progreso Microsoft_Word">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML5</span>
+                        <div class="barra-skill">
+                            <div class="progreso HTML5">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS3</span>
+                        <div class="barra-skill">
+                            <div class="progreso CSS3">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col">
+                    <h3>Hablidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso Comunicacion">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso Responsabilidad">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso Resolución_de_problemas">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Organización</span>
+                        <div class="barra-skill">
+                            <div class="progreso Organización">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso Adaptabilidad">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso Trabajo_en_equipo">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Toma de desiciones</span>
+                        <div class="barra-skill">
+                            <div class="progreso Toma_de_desiciones">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso Creatividad">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso Dedicacion">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>FORMACION</h3>
+                    <div class="item izq">
+                        <h4>Técnico Electricista</h4>
+                        <span class="casa">IPET N°50 Ing. F. Olmos, San Francisco</span>
+                        <span class="fecha">2016 - 2022</span>
+                        <p>Promedio general de calificaciones: 8.35</p>
+                        <p>Estudios de Secundaria finalizados</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ing. Sistemas de Información | Sistemas de información </h4>
+                        <span class="casa">UTN, San Francisco</span>
+                        <span class="fecha">2023 - hasta la fecha actual</span>
+                        <p>Soy estudiante de la carreara Ing. Sistemas de Información en la facultad UTN San Francisco. 
+                            En este 2025 comienzo mi tercer año en la carrera con 16 materias aprobadas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>HISTORIAL LABORAL</h3>
+                    <div class="item der">
+                        <h4>Técnico de mantenimiento preventivo y predictivo</h4>
+                        <span class="casa">Akron S.A | San Francisco</span>
+                        <span class="fecha">Septiembre 2022 - Diciembre 2022</span>
+                        <p>En la firma Akron S.A, donde he desarrollado las pasantías cumpliendo funciones de 
+                            mantenimiento bajo la supervisión del encargado Matias Chiappero T.E: 3564 213652</p>
+                        <p>Mantenimiento preventivo y correctivo de instalaciones, equipamiento eléctrico y mecánico</p>
+                        <p>Apoyo para la instalación y el montaje de equipos y maquinaria.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Electricista</h4>
+                        <span class="casa">IPET N°50 EFO | San Francisco</span>
+                        <span class="fecha">Marzo 2016 - Diciembre 2022</span>
+                        <p>Me avala mi experiencia técnica forjada en el taller del establecimiento educativo IPET N°50 EFO, 
+                            en la que el (o los maestros) Andreatta Pedro T.E: 3564 650085 pueden dar testimonio de la misma..</p>
+                        <p>Inspección de sistemas, equipos y componentes eléctricos para detectar riesgos y proponer mejoras.
+                        <p> Verificación de la compatibilidad y seguridad de los sistemas</p>
+                        <p>Interpretación técnica para la correcta instalación de sistemas y equipos eléctricos y de conexiones.</p>
+                        <p>Estudio de los diagramas de circuito para establecer una óptima distribución del cableado.</p>
+                        <p>Lectura y seguimiento de planos y manuales técnicos</p>
+                        <p>Manejo de sistemas informáticos y tecnológicos.</p>
+                            </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECCION PORTAFLIO-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://6786a6ea33645a9b013c178d--vocal-banoffee-9ebfb7.netlify.app/" target="_blank"><img src="Img/Mi primer pagina web.png" alt=""></a> 
+                    <div class="overlay">
+                        <h3>HTML5 y CSS3</h3>
+                        <p>Link en la imagen</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <a href="https://6601cdf27cfe6031f2b17b33--scintillating-cucurucho-42440f.netlify.app/" target="_blank"><img src="Img/Mi segunda pagina web.png" alt=""></a> 
+                    <div class="overlay">
+                        <h3>HTML5 y CSS3</h3>
+                        <p>Link en la imagen</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <a href="https://678688e7f96504816ee40e22--chic-puppy-e9e051.netlify.app/nosotros" target="_blank"><img src="Img/Mi tercer pagina web.png" alt=""></a> 
+                    <div class="overlay">
+                        <h3>HTML5 y CSS3</h3>
+                        <p>Link en la imagen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PIE DE PAGINA -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m296-224-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z"/></svg>
+        </a>
+        <div class="redes">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path><path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"></path><polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"></polygon><path fill="#c62828" d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z"></path><path fill="#fbc02d" d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z"></path>
+                </svg></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
