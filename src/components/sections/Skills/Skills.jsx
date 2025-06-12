@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import './Skills.css';
 
 const Skills = () => {
+  const [showAllSkills, setShowAllSkills] = useState(false);
   const technicalSkills = [
     {
       name: 'MySQL',
@@ -152,7 +153,7 @@ const Skills = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
-              {technicalSkills.map((skill, index) => (
+              {(showAllSkills ? technicalSkills : technicalSkills.slice(0, 4)).map((skill, index) => (
                 <motion.div 
                   key={index}
                   className={`skill-card ${skill.colorClass}`}
@@ -172,6 +173,15 @@ const Skills = () => {
                 </motion.div>
               ))}
             </motion.div>
+            <motion.button
+              className="show-more-btn"
+              onClick={() => setShowAllSkills(!showAllSkills)}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.7 }}
+            >
+              {showAllSkills ? 'Mostrar menos' : 'Desplegar más'}
+            </motion.button>
           </div>
 
           {/* Habilidades Profesionales */}
@@ -209,4 +219,4 @@ const Skills = () => {
   );
 };
 
-export default Skills; 
+export default Skills;

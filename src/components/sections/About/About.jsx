@@ -15,15 +15,32 @@ const About = () => {
     }
   };
 
-  const handleDownloadCV = (e) => {
+  const handleDownloadCV = async (e) => {
     e.preventDefault();
-    const cvPath = '/Agustin_Patat_CV.pdf';
-    const link = document.createElement('a');
-    link.href = cvPath;
-    link.download = 'Agustin_Patat_CV.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    
+    try {
+      const response = await fetch('/PATAT AGUSTIN.pdf');
+      if (!response.ok) {
+        throw new Error('No se pudo descargar el CV');
+      }
+      
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      
+      link.href = url;
+      link.download = 'PATAT_AGUSTIN_CV.pdf';
+      link.setAttribute('download', 'PATAT_AGUSTIN_CV.pdf');
+      document.body.appendChild(link);
+      link.click();
+      
+      // Limpieza
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Error al descargar el CV:', error);
+      alert('Hubo un problema al descargar el CV. Por favor inténtalo nuevamente.');
+    }
   };
 
   return (
@@ -132,4 +149,4 @@ const About = () => {
   );
 };
 
-export default About; 
+export default About;
