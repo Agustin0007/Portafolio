@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+
+/* Estilos globales para títulos de sección */
+section h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  padding: 20px 0;
+  color: var(--title-color);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  section h2 {
+    font-size: 36px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section h2 {
+    font-size: 32px;
+    margin-bottom: 1.25rem;
+  }
+}

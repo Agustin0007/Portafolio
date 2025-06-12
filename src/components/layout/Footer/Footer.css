@@ -1,0 +1,280 @@
+.footer {
+  font-family: var(--font-primary);
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 1rem 1rem 1rem;
+  position: relative;
+  overflow: hidden;
+  border-top: 3px solid var(--footer-accent);
+  box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+}
+
+[data-theme="light"] .footer {
+  --footer-bg: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+  --footer-text: #212529;
+  --footer-accent: #6c757d;
+}
+
+[data-theme="dark"] .footer {
+  --footer-bg: linear-gradient(to bottom, #212529, #343a40);
+  --footer-text: #f8f9fa;
+  --footer-accent: #3a3a3a;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.data-icon {
+  font-size: 4rem;
+  color: var(--footer-accent);
+  transition: all 0.3s ease;
+}
+
+.footer-title {
+  color: var(--footer-accent);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-links a:hover {
+  color: var(--footer-accent);
+}
+
+.social-link {
+  background: var(--footer-accent);
+  color: var(--footer-bg);
+}
+
+.social-link:hover {
+  transform: scale(1.1) translateY(-3px);
+}
+.footer-logo img {
+  width: 150px;
+  height: auto;
+}
+  
+  .footer-description {
+  
+  color: var(--color-beige);
+  
+  line-height: 1.6;
+  
+  margin-bottom: 2rem;
+  
+  }
+  
+  .footer-title {
+  
+  color: var(--color-gold);
+  
+  font-size: 1.5rem;
+  
+  margin-bottom: 1.5rem;
+  
+  font-family: 'Scheherazade New', serif;
+  
+  position: relative;
+  
+  display: inline-block;
+  
+  }
+  
+  .footer-title::after {
+  
+  content: '';
+  
+  position: absolute;
+  
+  bottom: -5px;
+  
+  left: 0;
+  
+  width: 50px;
+  
+  height: 2px;
+  
+  background: var(--color-gold);
+  
+  }
+  
+  .footer-links {
+  
+  list-style: none;
+  
+  padding: 0;
+  
+  }
+  
+  .footer-links li {
+  
+  margin-bottom: 1rem;
+  
+  }
+  
+  .footer-links a {
+  
+  color: var(--color-beige);
+  
+  text-decoration: none;
+  
+  transition: all 0.3s ease;
+  
+  display: inline-flex;
+  
+  align-items: center;
+  
+  gap: 0.5rem;
+  
+  }
+  
+  .footer-links a:hover {
+  
+  color: var(--color-gold);
+  
+  transform: translateX(5px);
+  
+  }
+  
+  .social-links {
+  
+  display: flex;
+  
+  gap: 1rem;
+  
+  margin-top: 1rem;
+  
+  }
+  
+  .social-link {
+  
+  width: 40px;
+  
+  height: 40px;
+  
+  border-radius: 50%;
+  
+  background: rgba(255, 255, 255, 0.1);
+  
+  display: flex;
+  
+  align-items: center;
+  
+  justify-content: center;
+  
+  color: var(--color-gold);
+  
+  font-size: 1.2rem;
+  
+  transition: all 0.3s ease;
+  
+  }
+  
+  .social-link:hover {
+  
+  background: var(--color-gold);
+  
+  color: var(--color-black);
+  
+  transform: translateY(-3px);
+  
+  }
+  
+  .footer-bottom {
+  
+  margin-top: 4rem;
+  
+  padding-top: 2rem;
+  
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  
+  text-align: center;
+  
+  color: var(--color-beige);
+  
+  font-size: 0.9rem;
+  
+  }
+  
+  @media (max-width: 992px) {
+  
+  .footer-content {
+  
+  grid-template-columns: repeat(2, 1fr);
+  
+  gap: 3rem;
+  
+  }
+  
+  }
+  
+  @media (max-width: 768px) {
+  
+  .footer {
+  
+  padding: 4rem 1rem 2rem;
+  
+  }
+  
+  .footer-content {
+  
+  grid-template-columns: 1fr;
+  
+  gap: 2rem;
+  
+  }
+  
+  .footer-section {
+  
+  text-align: center;
+  
+  }
+  
+  .footer-title::after {
+  
+  left: 50%;
+  
+  transform: translateX(-50%);
+  
+  }
+  
+  .social-links {
+  
+  justify-content: center;
+  
+  }
+  
+  .footer-links a:hover {
+  
+  transform: translateX(0);
+  
+  }
+  
+  }
+.footer-description, .footer-bottom {
+  font-family: var(--font-primary); /* Body text consistency */
+}
+.data-icon-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.data-icon {
+  font-size: 2.5rem; /* Adjust size as needed */
+  color: var(--color-gold); /* Or your preferred color */
+}
