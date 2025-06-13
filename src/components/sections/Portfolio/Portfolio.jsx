@@ -26,7 +26,7 @@ const Portfolio = () => {
           -Facilitar la toma de decisionesinformadas mediante el análisis de datos.
           -Innovación tecnológica en el sector agropecuario.
           -Implementar tecnologías avanzadaspara la gestión de terneros.`,
-      image: 'public/assets/images/profile/Proyecto 4.png', // Cambiado a ruta pública
+      image:       image: 'public/assets/images/profile/Proyecto 4.png', // Cambiado a ruta pública', // Cambiado a ruta pública
       technologies: ['Power BI', 'DAX', 'Excel'],
       link: 'https://app.powerbi.com/view?r=eyJrIjoiNWZmZDZjMTAtYjJmZS00NjgwLTk1ZWItNWI2ZTQ4MjMzOTI5IiwidCI6IjUzMDczOGU5LTU1MzAtNDFkNi1iODU0LWYyYzkwZTBkZDA4MSJ9',
     },  
