@@ -26,7 +26,7 @@ const Portfolio = () => {
           -Facilitar la toma de decisionesinformadas mediante el análisis de datos.
           -Innovación tecnológica en el sector agropecuario.
           -Implementar tecnologías avanzadaspara la gestión de terneros.`,
-      image: 'public/assets/images/profile/Proyecto 4.png', // Cambiado a ruta pública
+      image:'/assets/images/profile/Proyecto 4.png', // Ruta corregida
       technologies: ['Power BI', 'DAX', 'Excel'],
       link: 'https://app.powerbi.com/view?r=eyJrIjoiNWZmZDZjMTAtYjJmZS00NjgwLTk1ZWItNWI2ZTQ4MjMzOTI5IiwidCI6IjUzMDczOGU5LTU1MzAtNDFkNi1iODU0LWYyYzkwZTBkZDA4MSJ9',
     },  
@@ -52,9 +52,9 @@ const Portfolio = () => {
       - Gráfico de rectángulos para jerarquías organizacionales.
       - Mapas para distribución geográfica del personal.
       - Paneles intuitivos y responsivos`,
-      image: 'public/assets/images/profile/Proyecto 1.png',
+      image:'public/assets/images/profile/Proyecto 1.png',
       technologies: ['Power BI', 'Excel'],
-      link: 'https://app.powerbi.com/view?r=eyJrIjoiNmY0Y2NiZDUtM2E2Zi00NjRiLWJiNjYtOGI4NTk3OGFlNmY3IiwidCI6IjUzMDczOGU5LTU1MzAtNDFkNi1iODU0LWYyYzkwZTBkZDA4MSJ9" target="_blank',
+      link: 'https://app.powerbi.com/view?r=eyJrIjoiNmY0Y2NiZDUtM2E2Zi00NjRiLWJiNjYtOGI4NTk3OGFlNmY3IiwidCI6IjUzMDczOGU5LTU1MzAtNDFkNi1iODU0LWYyYzkwZTBkZDA4MSJ9',
     },
     {
       id: 4,
@@ -66,9 +66,9 @@ const Portfolio = () => {
       Informe de Análisis en Power BI
       -Descripción del Proyecto: Este proyecto consiste en un panel interactivo desarrollado en Power BI, diseñado para analizar y visualizar datos de manera eficiente. Se han implementado distintos gráficos y métricas claves para facilitar la toma de decisiones basada en datos.
       -Herramientas y Tecnologías Utilizadas:Para su desarrollo se ha utilizado Power BI como principal herramienta de visualización, junto con DAX (Data Analysis Expressions) para cálculos avanzados y Power Query para la transformación de datos `,
-      image: 'public/assets/images/profile/Proyecto 2.png',
+      image:'public/assets/images/profile/Proyecto 2.png',
       technologies: ['Power BI', 'MySQL'],
-      link: 'https://app.powerbi.com/view?r=eyJrIjoiM2ZiMzFhNjktYjkxMS00OWZlLTg0ZDQtODBkZGM3OTNlMDMwIiwidCI6IjUzMDczOGU5LTU1MzAtNDFkNi1iODU0LWYyYzkwZTBkZDA4MSJ9" target="_blank', 
+      link: 'https://app.powerbi.com/view?r=eyJrIjoiM2ZiMzFhNjktYjkxMS00OWZlLTg0ZDQtODBkZGM3OTNlMDMwIiwidCI6IjUzMDczOGU5LTU1MzAtNDFkNi1iODU0LWYyYzkwZTBkZDA4MSJ9', 
     },
     {
       id: 5,
@@ -92,9 +92,9 @@ const Portfolio = () => {
       - Power Query para transformación y modelado de datos
       - Implementación de medidas calculadas para análisis predictivo
       `, 
-      image: 'public/assets/images/profile/Proyecto 3.png',
+      image:'public/assets/images/profile/Proyecto 3.png',
       technologies: ['Power BI', 'MySQL'],
-      link: 'https://app.powerbi.com/view?r=eyJrIjoiM2ZlNTk0YzMtMDMyZS00MWQwLWIyNmYtZjdhMTRiY2E4YmQ1IiwidCI6IjUzMDczOGU5LTU1MzAtNDFkNi1iODU0LWYyYzkwZTBkZDA4MSJ9" target="_blank', 
+      link: 'https://app.powerbi.com/view?r=eyJrIjoiM2ZlNTk0YzMtMDMyZS00MWQwLWIyNmYtZjdhMTRiY2E4YmQ1IiwidCI6IjUzMDczOGU5LTU1MzAtNDFkNi1iODU0LWYyYzkwZTBkZDA4MSJ9', 
     }
   ];
   const allProjects = [...workProjects, ...practiceProjects];
