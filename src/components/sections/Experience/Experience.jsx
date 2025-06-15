@@ -79,7 +79,7 @@ const Experience = () => {
         className="experience-content"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0 }} // Cambiado de 0.3 a 0
         variants={containerVariants}
       >
         <motion.h2 variants={itemVariants}>
@@ -154,4 +154,4 @@ const Experience = () => {
   );
 };
 
-export default Experience; 
+export default Experience;
